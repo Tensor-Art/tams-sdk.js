@@ -78,13 +78,16 @@ export class TamsSDK {
 
   async uploadFile({
     file,
+    expires,
+    term,
   }: {
     file: Buffer | ReadableStream | File | Blob
+    expires: number
+    term?: 'SHORT' | 'LONG'
   }): Promise<{ resourceId: string }> {
-    // TODO: params
     const resp = await this.api.v1.tamsApiV1ServiceCreateResourceImage({
-      expireSec: `${60 * 60}`,
-      term: 1,
+      expireSec: `${expires}`,
+      term: term === 'LONG' ? 2 : 1,
     })
 
     if (Buffer.isBuffer(file)) {
