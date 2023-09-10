@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "lib": ["DOM", "es2017"],
+    "sourceMap": true,
+    "baseUrl": "./"
+  },
+  "include": ["src/**/*", "__generated__/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

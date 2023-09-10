@@ -1,0 +1,39 @@
+{
+  "name": "tams-sdk",
+  "version": "1.0.0",
+  "description": "",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "gen:api": "node ./scripts/gen-api.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zhuscat",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.6.0",
+    "execa": "^8.0.1",
+    "prettier": "3.0.3",
+    "swagger-typescript-api": "^13.0.3",
+    "tsup": "^7.2.0"
+  },
+  "packageManager": "pnpm@8.7.4",
+  "dependencies": {
+    "node-fetch-native": "^1.4.0"
+  },
+  "files": [
+    "dist/*"
+  ]
+}
