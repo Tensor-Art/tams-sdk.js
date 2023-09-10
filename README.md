@@ -2,6 +2,10 @@
 
 English | [中文](./README-zh_CN.md)
 
+## Environment Support
+
+- Node.js
+
 ## Install
 
 ```
@@ -32,7 +36,7 @@ const sdk = new TamsSDK({
 
 async function main() {
   await sdk.v1.tamsApiV1ServiceGetModel("MODEL_ID");
-  
+
   await sdk.uploadFile({
     file: fs.readFileSync('./Slogan.png')
   })
