@@ -20,7 +20,7 @@ yarn add tams-sdk
 pnpm add tams-sdk
 ```
 
-## 示例子
+## 示例
 
 ```js
 import { TamsSDK, Sha256RsaAuthenticateStrategy } from "tams-sdk";
