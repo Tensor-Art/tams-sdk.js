@@ -46,3 +46,9 @@ async function main() {
 
 main();
 ```
+
+## Links
+
+- [Tensor Art Model Service](https://tams.tensor.art)
+- [Tensor.Art](https://tensor.art)
+- [TAMS Docs](https://docs.tensor.art)
