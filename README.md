@@ -47,6 +47,10 @@ async function main() {
 main();
 ```
 
+### Example
+
+- [tams-gen-qrcode-example](https://github.com/Tensor-Art/tams-gen-qrcode-example)
+
 ## Links
 
 - [Tensor Art Model Service](https://tams.tensor.art)
