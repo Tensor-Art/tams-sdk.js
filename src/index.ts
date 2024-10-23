@@ -35,6 +35,14 @@ export class Sha256RsaAuthenticateStrategy implements AuthenticateStrategy {
   }
 }
 
+export class TokenAuthenticateStrategy implements AuthenticateStrategy {
+  constructor(private token: string) {}
+
+  getHeaders() {
+    return new Headers({ authorization: `Bearer ${this.token}` })
+  }
+}
+
 type TamsSDKOptions = {
   appId: string
   authenticateStrategy: AuthenticateStrategy
